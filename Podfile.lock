@@ -1,0 +1,48 @@
+PODS:
+  - Alamofire (4.7.3)
+  - iOSDFULibrary (4.1.3):
+    - Zip (~> 1.0)
+  - LinearProgressBar (1.0.1)
+  - MaterialComponents/Palettes (60.1.0)
+  - MaterialComponents/private/Math (60.1.0)
+  - MaterialComponents/ProgressView (60.1.0):
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Math
+    - MDFInternationalization
+    - MotionAnimator (~> 2.1)
+  - MDFInternationalization (1.1.0)
+  - MotionAnimator (2.8.1):
+    - MotionInterchange (~> 1.6)
+  - MotionInterchange (1.6.0)
+  - Zip (1.1.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - iOSDFULibrary
+  - LinearProgressBar
+  - MaterialComponents/ProgressView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - iOSDFULibrary
+    - LinearProgressBar
+    - MaterialComponents
+    - MDFInternationalization
+    - MotionAnimator
+    - MotionInterchange
+    - Zip
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  iOSDFULibrary: 921bc0e250ad204a68ffe0cc98a7cb6ac8b13b9f
+  LinearProgressBar: f6a74dbabed229dbb1a7978089e2e4317a3a0ee0
+  MaterialComponents: bd1ebf279041919605fe6133a4173db4148ec1cd
+  MDFInternationalization: b5b8626628abf026e630e5ebaeee563037712cbb
+  MotionAnimator: ee16aa30567c5bae0fb2750c132915829cfaaf8a
+  MotionInterchange: ead0e3ae1f3a5fb539e289debbc7ae036160a10d
+  Zip: 8877eede3dda76bcac281225c20e71c25270774c
+
+PODFILE CHECKSUM: 22b1c9543f999eb8af7c05938a29d8f99766b744
+
+COCOAPODS: 1.5.3
