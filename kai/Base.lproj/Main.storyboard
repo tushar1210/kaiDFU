@@ -42,19 +42,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device: Kai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYQ-Wy-orq">
-                                <rect key="frame" x="24" y="97" width="151" height="35"/>
+                                <rect key="frame" x="24" y="53" width="151" height="35"/>
                                 <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 1 of 3: Booting the Kai on DFU Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLA-ej-eYX">
-                                <rect key="frame" x="24" y="140" width="327" height="19"/>
+                                <rect key="frame" x="24" y="96" width="327" height="19"/>
                                 <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="16"/>
                                 <color key="textColor" name="controlAccentColor" catalog="System" colorSpace="catalog"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3CG-F6-DMF">
-                                <rect key="frame" x="24" y="171" width="327" height="80"/>
+                                <rect key="frame" x="24" y="127" width="327" height="80"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auP-f1-1QR">
                                         <rect key="frame" x="0.0" y="0.0" width="327" height="42"/>
@@ -72,17 +72,30 @@
                                 </subviews>
                             </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kai" translatesAutoresizingMaskIntoConstraints="NO" id="gCZ-3Z-SxW">
-                                <rect key="frame" x="24" y="271" width="327" height="170"/>
+                                <rect key="frame" x="24" y="227" width="327" height="170"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="170" id="9PK-s4-WUO"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tng-Mz-ub2">
+                                <rect key="frame" x="292" y="53" width="59" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9f9-JS-Ish"/>
+                                    <constraint firstAttribute="width" constant="59" id="tIR-HM-NW3"/>
+                                </constraints>
+                                <state key="normal" title="Dongle"/>
+                                <connections>
+                                    <segue destination="2Qv-9W-9H0" kind="show" id="8SH-On-gFS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="dWf-0Z-qDs" firstAttribute="trailing" secondItem="hLA-ej-eYX" secondAttribute="trailing" constant="24" id="0NL-FY-d2z"/>
                             <constraint firstItem="3CG-F6-DMF" firstAttribute="top" secondItem="hLA-ej-eYX" secondAttribute="bottom" constant="12" id="17f-ll-2N4"/>
                             <constraint firstItem="dWf-0Z-qDs" firstAttribute="trailing" secondItem="3CG-F6-DMF" secondAttribute="trailing" constant="24" id="1ao-rd-q1U"/>
+                            <constraint firstItem="tng-Mz-ub2" firstAttribute="top" secondItem="dWf-0Z-qDs" secondAttribute="top" constant="33" id="3tv-6g-mJy"/>
+                            <constraint firstItem="tng-Mz-ub2" firstAttribute="leading" secondItem="LYQ-Wy-orq" secondAttribute="trailing" constant="117" id="5vU-Lg-Xax"/>
                             <constraint firstItem="gCZ-3Z-SxW" firstAttribute="top" secondItem="3CG-F6-DMF" secondAttribute="bottom" constant="20" id="7ya-Al-bCn"/>
                             <constraint firstItem="hLA-ej-eYX" firstAttribute="leading" secondItem="dWf-0Z-qDs" secondAttribute="leading" constant="24" id="99K-1w-Xis"/>
                             <constraint firstItem="3CG-F6-DMF" firstAttribute="leading" secondItem="dWf-0Z-qDs" secondAttribute="leading" constant="24" id="HW4-NS-vDL"/>
@@ -107,7 +120,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OgW-Nz-Zy5" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1262" y="87"/>
+            <point key="canvasLocation" x="1306" y="87"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xAd-OA-ew7">
@@ -207,7 +220,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="u1P-ee-K5b">
-                                <rect key="frame" x="24" y="171" width="327" height="14"/>
+                                <rect key="frame" x="24" y="127" width="327" height="14"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Kai has been successfully updated" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sr2-Dw-Feg">
                                         <rect key="frame" x="0.0" y="0.0" width="327" height="14"/>
@@ -218,13 +231,13 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device: Kai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JwP-ew-TEq">
-                                <rect key="frame" x="24" y="97" width="151" height="35"/>
+                                <rect key="frame" x="24" y="53" width="151" height="35"/>
                                 <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 3 of 3: Update Successful" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yh9-ly-PnN">
-                                <rect key="frame" x="24" y="140" width="327" height="19"/>
+                                <rect key="frame" x="24" y="96" width="327" height="19"/>
                                 <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="16"/>
                                 <color key="textColor" name="controlAccentColor" catalog="System" colorSpace="catalog"/>
                                 <nil key="highlightedColor"/>
@@ -279,13 +292,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device: Kai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qyy-kz-Zys">
-                                <rect key="frame" x="24" y="97" width="151" height="35"/>
+                                <rect key="frame" x="24" y="53" width="151" height="35"/>
                                 <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QI0-Tn-BZ4">
-                                <rect key="frame" x="24" y="171" width="327" height="14"/>
+                                <rect key="frame" x="24" y="127" width="327" height="14"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Kai has been successfully updated" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEl-hF-2Gk">
                                         <rect key="frame" x="0.0" y="0.0" width="327" height="14"/>
@@ -296,7 +309,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 3 of 3: Update Failed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56E-cq-6ma">
-                                <rect key="frame" x="24" y="140" width="327" height="19"/>
+                                <rect key="frame" x="24" y="96" width="327" height="19"/>
                                 <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="16"/>
                                 <color key="textColor" red="0.80000000000000004" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -339,8 +352,116 @@
             </objects>
             <point key="canvasLocation" x="2918" y="752"/>
         </scene>
+        <!--Install Firmware Update-->
+        <scene sceneID="Qi9-xi-J2a">
+            <objects>
+                <viewController id="2Qv-9W-9H0" customClass="DongleViewController" customModule="kai" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="He4-Ub-Haf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ChG-qS-cPG">
+                                <rect key="frame" x="41" y="575" width="293" height="62"/>
+                                <color key="backgroundColor" name="controlAccentColor" catalog="System" colorSpace="catalog"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ChG-qS-cPG" secondAttribute="height" multiplier="293:62" id="BcY-Ov-xxp"/>
+                                    <constraint firstAttribute="height" constant="62" id="DlY-ZC-OVg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="17"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueAction:" destination="2Qv-9W-9H0" eventType="touchUpInside" id="Lrd-MN-V0I"/>
+                                    <segue destination="DyV-dN-s1u" kind="show" identifier="twopt2" id="4eN-rg-nTH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device: Dongle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cg1-3a-0AD">
+                                <rect key="frame" x="24" y="53" width="203" height="35"/>
+                                <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 1 of 3: Booting the Dongle to DFU Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEb-ro-PEU">
+                                <rect key="frame" x="24" y="96" width="327" height="19"/>
+                                <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="16"/>
+                                <color key="textColor" name="controlAccentColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gda-AJ-jcn">
+                                <rect key="frame" x="24" y="127" width="327" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDt-T5-TSP">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="42"/>
+                                        <string key="text">To put the Kai in DFU mode, turn your Kai off. Then press and hold down the poweer button for 5-7 seconds. A blue LED light indicates that your Kai is in DFU mode.</string>
+                                        <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note: Have sufficient charge before starting the update to avoid update failures" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWM-dL-dGn">
+                                        <rect key="frame" x="0.0" y="52" width="327" height="28"/>
+                                        <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kai" translatesAutoresizingMaskIntoConstraints="NO" id="S9F-iC-LWI">
+                                <rect key="frame" x="24" y="227" width="327" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="bim-mn-AFZ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYk-Uy-GWW">
+                                <rect key="frame" x="321" y="53" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="CbE-cR-ATc"/>
+                                    <constraint firstAttribute="height" constant="30" id="Mij-Ws-jDe"/>
+                                </constraints>
+                                <state key="normal" title="Kai"/>
+                                <connections>
+                                    <segue destination="OnO-DB-ATR" kind="show" id="P0X-1i-jTD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lZa-31-cOJ" firstAttribute="trailing" secondItem="S9F-iC-LWI" secondAttribute="trailing" constant="24" id="3di-dk-F9R"/>
+                            <constraint firstItem="gda-AJ-jcn" firstAttribute="top" secondItem="iEb-ro-PEU" secondAttribute="bottom" constant="12" id="4D2-J8-g3U"/>
+                            <constraint firstItem="tYk-Uy-GWW" firstAttribute="leading" secondItem="Cg1-3a-0AD" secondAttribute="trailing" constant="94" id="AVU-pV-YdA"/>
+                            <constraint firstItem="lZa-31-cOJ" firstAttribute="trailing" secondItem="iEb-ro-PEU" secondAttribute="trailing" constant="24" id="DTY-Fu-4Wk"/>
+                            <constraint firstItem="Cg1-3a-0AD" firstAttribute="top" secondItem="lZa-31-cOJ" secondAttribute="top" constant="33" id="HX5-o6-MMi"/>
+                            <constraint firstItem="tYk-Uy-GWW" firstAttribute="top" secondItem="lZa-31-cOJ" secondAttribute="top" constant="33" id="LU4-me-Vql"/>
+                            <constraint firstItem="iEb-ro-PEU" firstAttribute="leading" secondItem="lZa-31-cOJ" secondAttribute="leading" constant="24" id="NQ3-kQ-hMr"/>
+                            <constraint firstItem="Cg1-3a-0AD" firstAttribute="leading" secondItem="lZa-31-cOJ" secondAttribute="leading" constant="24" id="Nag-9P-Zfm"/>
+                            <constraint firstItem="S9F-iC-LWI" firstAttribute="top" secondItem="gda-AJ-jcn" secondAttribute="bottom" constant="20" id="SvZ-uy-RfD"/>
+                            <constraint firstItem="gda-AJ-jcn" firstAttribute="leading" secondItem="lZa-31-cOJ" secondAttribute="leading" constant="24" id="T8Y-HJ-G7g"/>
+                            <constraint firstAttribute="trailing" secondItem="gda-AJ-jcn" secondAttribute="trailing" constant="24" id="X32-uN-hdl"/>
+                            <constraint firstItem="lZa-31-cOJ" firstAttribute="bottom" secondItem="ChG-qS-cPG" secondAttribute="bottom" constant="30" id="Xsd-aj-nt5"/>
+                            <constraint firstItem="lZa-31-cOJ" firstAttribute="trailing" secondItem="gda-AJ-jcn" secondAttribute="trailing" constant="24" id="Z7P-PJ-bPD"/>
+                            <constraint firstItem="S9F-iC-LWI" firstAttribute="leading" secondItem="lZa-31-cOJ" secondAttribute="leading" constant="24" id="fRM-dg-Hdq"/>
+                            <constraint firstItem="lZa-31-cOJ" firstAttribute="trailing" secondItem="ChG-qS-cPG" secondAttribute="trailing" constant="41" id="ftB-Ko-5Ge"/>
+                            <constraint firstItem="iEb-ro-PEU" firstAttribute="top" secondItem="Cg1-3a-0AD" secondAttribute="bottom" constant="8" id="p0c-sz-nLf"/>
+                            <constraint firstItem="ChG-qS-cPG" firstAttribute="leading" secondItem="lZa-31-cOJ" secondAttribute="leading" constant="41" id="ttA-vk-Md4"/>
+                            <constraint firstItem="gda-AJ-jcn" firstAttribute="leading" secondItem="lZa-31-cOJ" secondAttribute="leading" constant="24" id="v8i-82-hWu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lZa-31-cOJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Install Firmware Update" id="8Au-1w-czN"/>
+                    <connections>
+                        <outlet property="continueButton" destination="ChG-qS-cPG" id="FgV-Op-ZOR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gIx-YA-Esg" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1306" y="-648"/>
+        </scene>
     </scenes>
     <resources>
         <image name="kai" width="948" height="558"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="4eN-rg-nTH"/>
+        <segue reference="P0X-1i-jTD"/>
+    </inferredMetricsTieBreakers>
 </document>

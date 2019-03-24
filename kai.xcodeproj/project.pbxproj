@@ -17,6 +17,7 @@
 		78DA15612246933B00D63D30 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DA15602246933B00D63D30 /* SecondViewController.swift */; };
 		78DA15632246B0CA00D63D30 /* ThreeSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DA15622246B0CA00D63D30 /* ThreeSuccessViewController.swift */; };
 		78DA15652246B0D700D63D30 /* ThreeFailureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DA15642246B0D700D63D30 /* ThreeFailureViewController.swift */; };
+		78DA156722479A3300D63D30 /* DongleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DA156622479A3300D63D30 /* DongleViewController.swift */; };
 		FEF7D4D8148FEF4063636EFA /* Pods_kai.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 133761C14DBF7E23C8EF2518 /* Pods_kai.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		78DA15602246933B00D63D30 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		78DA15622246B0CA00D63D30 /* ThreeSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSuccessViewController.swift; sourceTree = "<group>"; };
 		78DA15642246B0D700D63D30 /* ThreeFailureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeFailureViewController.swift; sourceTree = "<group>"; };
+		78DA156622479A3300D63D30 /* DongleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DongleViewController.swift; sourceTree = "<group>"; };
 		F8E850475E6D6BC971100D5F /* Pods-kai.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kai.release.xcconfig"; path = "Pods/Target Support Files/Pods-kai/Pods-kai.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +87,7 @@
 				7818AB202246597F00712F77 /* DFUMain.swift */,
 				78DA155E2246920E00D63D30 /* FirstViewController.swift */,
 				78DA15602246933B00D63D30 /* SecondViewController.swift */,
+				78DA156622479A3300D63D30 /* DongleViewController.swift */,
 				7818AB12224655A900712F77 /* Main.storyboard */,
 				78DA15622246B0CA00D63D30 /* ThreeSuccessViewController.swift */,
 				78DA15642246B0D700D63D30 /* ThreeFailureViewController.swift */,
@@ -234,6 +237,7 @@
 				7818AB0F224655A900712F77 /* AppDelegate.swift in Sources */,
 				7818AB212246597F00712F77 /* DFUMain.swift in Sources */,
 				78DA15612246933B00D63D30 /* SecondViewController.swift in Sources */,
+				78DA156722479A3300D63D30 /* DongleViewController.swift in Sources */,
 				78DA15632246B0CA00D63D30 /* ThreeSuccessViewController.swift in Sources */,
 				78DA155F2246920E00D63D30 /* FirstViewController.swift in Sources */,
 			);

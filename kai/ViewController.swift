@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-       kai.downloadFirmware()
+       kai.downloadFirmware(api: "http://dwnlds.vicara.co/kai.zip")
         
     }
 

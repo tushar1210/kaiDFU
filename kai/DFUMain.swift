@@ -9,6 +9,7 @@
 var success = true
 var inDFU = false
 var kai = KaiBluetoothDFUManager()
+var downloadAPI = String()
 
 
 import UIKit
@@ -56,14 +57,6 @@ class KaiBluetoothDFUManager: UIViewController, DFUServiceDelegate, DFUProgressD
         self.present(alert, animated: true, completion: nil)
     }
     
-    func selectFirmware() {
-        let stringPath = URL(string: "/var/mobile/Containers/Data/Application/BF40C083-7124-48C5-812F-69449826DA26/Documents/kai.zip")
-        selectedFileURL = stringPath
-        let fileNameExtension = stringPath?.pathExtension.lowercased()
-        if fileNameExtension == "zip" {
-            selectedFirmware = DFUFirmware(urlToZipFile: stringPath!)
-        }
-    }
     
     
     func performDFU() {
@@ -126,11 +119,10 @@ class KaiBluetoothDFUManager: UIViewController, DFUServiceDelegate, DFUProgressD
     }
     
     
-    var downloadAPI = "http://dwnlds.vicara.co/kai.zip"
     var isDownloaded = false
     var downloadURL = String()
     
-    func downloadFirmware(){
+    func downloadFirmware(api:String){
         let downloadLocation:DownloadRequest.DownloadFileDestination = {_,_ in
             let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
             let fileURL = documentsURL.appendingPathComponent("kai.zip")
@@ -138,7 +130,7 @@ class KaiBluetoothDFUManager: UIViewController, DFUServiceDelegate, DFUProgressD
             return (fileURL, [.removePreviousFile, .createIntermediateDirectories])
         }
         
-        Alamofire.download(downloadAPI, to: downloadLocation).response { response in
+        Alamofire.download(api, to: downloadLocation).response { response in
             if response.error == nil{
                 print(response.destinationURL)
                 self.selectedFirmware = DFUFirmware(urlToZipFile: response.destinationURL!)

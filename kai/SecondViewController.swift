@@ -14,8 +14,9 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var progressView: MDCProgressView!
     var updateTimer:Timer?
     
+    
     override func viewDidAppear(_ animated: Bool) {
-        kai.downloadFirmware()
+        kai.downloadFirmware(api:downloadAPI)
         //kai.performDFU()
         startAndShowProgressView()
         updateTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(updateTheProgressBar), userInfo: nil, repeats: true)
