@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OnO-DB-ATR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Rd-gC-LrK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -149,19 +149,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device: Kai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gW-5C-vbK">
-                                <rect key="frame" x="24" y="97" width="151" height="35"/>
+                                <rect key="frame" x="24" y="53" width="151" height="35"/>
                                 <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 2 of 3: Installing Update" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7E-qx-6El">
-                                <rect key="frame" x="24" y="140" width="327" height="19"/>
+                                <rect key="frame" x="24" y="96" width="327" height="19"/>
                                 <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="16"/>
                                 <color key="textColor" name="controlAccentColor" catalog="System" colorSpace="catalog"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0EB-ND-D7S">
-                                <rect key="frame" x="24" y="171" width="327" height="28"/>
+                                <rect key="frame" x="24" y="127" width="327" height="28"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Firmware Update is being installed. Do not disconnect or turn off Kai while the update is ongoing" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPc-pH-iIJ">
                                         <rect key="frame" x="0.0" y="0.0" width="327" height="28"/>
@@ -172,7 +172,7 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OCC-uQ-bCq" customClass="MDCProgressView">
-                                <rect key="frame" x="24" y="228" width="327" height="5"/>
+                                <rect key="frame" x="24" y="184" width="327" height="5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="5" id="PBo-HC-ear"/>
@@ -255,6 +255,7 @@
                                 </state>
                                 <connections>
                                     <action selector="finishAction:" destination="3Rd-gC-LrK" eventType="touchUpInside" id="qaO-13-Miq"/>
+                                    <segue destination="OnO-DB-ATR" kind="show" id="hQX-EV-thW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -326,6 +327,7 @@
                                 </state>
                                 <connections>
                                     <action selector="finishAction:" destination="Eed-Hu-hOY" eventType="touchUpInside" id="UhW-so-ehG"/>
+                                    <segue destination="OnO-DB-ATR" kind="showDetail" id="7XK-Zn-fvD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -350,7 +352,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XD5-tY-paT" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2918" y="752"/>
+            <point key="canvasLocation" x="2823" y="812"/>
         </scene>
         <!--Install Firmware Update-->
         <scene sceneID="Qi9-xi-J2a">
@@ -462,6 +464,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="4eN-rg-nTH"/>
-        <segue reference="P0X-1i-jTD"/>
+        <segue reference="hQX-EV-thW"/>
     </inferredMetricsTieBreakers>
 </document>
